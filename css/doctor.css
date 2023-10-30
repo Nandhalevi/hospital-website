@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --blue:#1F2B6C;
+    --green:#02A556;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.nav-content{
+    display: flex;
+    gap: 6rem;
+}
+
+.nav-box-1{
+    display: flex;
+}
+
+.nav-box-1 img{
+    padding: 0 .8rem;
+}
+
+.nav-box-1 p{
+    font-size: 1.8rem;
+    color: #252525;
+    font-weight: 600;
+}
+
+.nav-box-1 h5{
+    font-size: 2.2rem;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.logo{
+    width: 12%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    height: 7rem;
+    width: 100%;
+    background-color:#1F2B6C ;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    align-items: center;
+    position: relative;
+}
+.nav-links li a{
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    color: #f2f5f7;
+    font-weight: 500;
+}
+
+
+
+
+.drop-links{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: white;
+    z-index: 1000;
+    border-radius: .7rem;
+    padding: .8rem 0rem;
+    -webkit-transition:  .5s all ease;
+	transition: .5s all ease;
+}
+
+.drop-links li{
+    display: none;
+    color: #252525;
+}
+
+.drop-links li a{
+    color: #131418;
+}
+
+.drop-links li:hover{
+    display: block;
+    background: var(--green);
+    border-radius: .7rem;
+    color: #252525;
+    padding: .7rem 0;
+    -webkit-transition:  .1s all ease;
+	transition: .2s all ease;
+}
+
+.nav-drop:hover .drop-links li{
+    display: block;
+}
+
+
+
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    padding: .8rem 2.5rem;
+    background: var(--green);
+    margin: 0 6rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #f2f5f7;
+
+}
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+.login-button a:hover {
+    color: #252525;
+    background-color: #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 3rem;
+    height:.3rem;
+    background: #f2f5f7;
+    margin: .5rem;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+.about-head{
+    background-image: url(../images/Rectangle\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.head-para{
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.head-para h1{
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.head-para h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.head-para span{
+    color: #02A556;
+}
+
+
+.our-team{
+    padding: 3rem 0;
+    /* background-image: url(../images/stethoscope-doctor-s-desk.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-head{
+    text-align: center;
+}
+
+.team-head h1{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #1F2B6C;
+}
+
+.team-card{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    padding: 4rem 0;
+}
+
+.team-box{
+    position: relative;
+    text-align: center;
+}
+
+.teambox-name{
+    position: absolute;
+    background: #1F2B6C;
+    top: 26.4rem;
+    width: 100%;
+}
+
+.teambox-name h3{
+    font-size: 2.4rem;
+    font-family: 600;
+    color: white;
+}
+
+.teambox-name h6{
+    font-size: 1.6rem;
+    font-family: 400;
+    color: white;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us{
+    width: 80%;
+}
+
+.contact-content{
+    text-align: center;
+    padding: 0 0 3rem 0;
+}
+
+.contact-content h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #02A556;
+}
+
+.contact-content h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #1F2B6C;
+}
+
+.contact-head{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 3rem 0 ;
+}
+
+
+.contact-box{
+    width: 25%;
+    padding: 2rem;
+    background: #BFD2F8;
+    border-radius: .7rem;
+}
+
+.contact-box p{
+    font-size: 3rem;
+    padding: .7rem 0;
+    color: #1F2B6C;
+}
+
+.contact-box h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1F2B6C;
+}
+
+.contact-box h5{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: .7rem 0;
+    color: #1F2B6C;
+}
+
+.contact-box h6{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #1F2B6C;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #252525;
+}
+
+.foot{
+    width: 90%;
+}
+
+.footers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-about{
+    width: 25%;
+}
+
+.foot-about h3{
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #f2f5f7;
+}
+
+.foot-about p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 2rem 0;
+    color: white;
+}
+
+.social a{
+    font-size: 2.5rem;
+    padding: 2rem 1rem;
+    color: white;
+}
+
+.foot-links h3{
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #f2f5f7;
+}
+
+.foot-links a{
+    display:flex ;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.credits{
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+.credits h1{
+    font-size: 2.6rem;
+    color: white;
+}
+
+
+
+@media (max-width:1200px) {
+
+    .nav-content{
+        gap: 4rem;
+    }
+
+    .nav-links li a{
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+
+    .nav-btn a{
+        padding: .8rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width:900px){
+
+    .nav-content{
+        gap: 2rem;
+    }
+
+    .nav-links li a{
+        font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+
+    .nav-btn a{
+        padding: .6rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-box p{
+        font-size: 2.2rem;
+    }
+    
+    .contact-box h3{
+        font-size: 1.4rem;
+    }
+    
+    .contact-box h5{
+        font-size: 1.1rem;
+    }
+    
+    .contact-box h6{
+        font-size: 1.1rem;
+    }
+    
+
+}
+
+/*Stying for small screens*/
+
+@media screen and (max-width: 800px){
+    nav{
+        z-index: 3;
+    }
+
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 9%;
+        top: 15%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links{
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        padding: 10rem 0;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+    }
+
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li a{
+        color: #f2f5f7;
+        font-size: 2.2rem;
+    }
+
+    .drop-links{
+        top: 40%;
+        gap: 0rem;
+        padding: .4rem 0;
+    }
+
+    .drop-links li a{
+        color: #131418;
+        font-size: 1.4rem;
+    }
+    
+    .nav-drop:hover .drop-links li{
+        display: block;
+    }
+
+    .nav-links li{
+        opacity: 1;
+        padding: 1rem 0;
+    }
+    
+     .nav-links li:nth-child(1){
+        transition: all 0.2s ease 0.1s;
+    }
+   
+    .nav-links li:nth-child(2){
+        transition: all 0.2s ease 0.2s;
+    }
+     
+    .nav-links li:nth-child(3){
+        transition: all 0.2s ease 0.3s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.2s ease 0.4s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.2s ease 0.5s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.2s ease 0.6s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.2s ease 0.7s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(8){
+        transition: all 0.2s ease 0.8s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(9){
+        transition: all 0.2s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(10){
+        transition: all 0.2s ease 1s;
+        margin: 0;
+    }
+
+    .nav-box-1 p{
+        font-size: 1.4rem;
+    }
+    
+    .nav-box-1 h5{
+        font-size: 1.8rem;
+    }
+
+    .logo{
+        width: 18%;
+    }
+
+    .head-para h1{
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+    
+    .head-para h3{
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+
+    
+    .foot-about h3{
+        font-size: 2.2rem;
+    }
+    
+    .foot-about p{
+        font-size: 1.2rem;
+    }
+    
+    .social a{
+        font-size: 1.7rem;
+        padding: 1rem .5rem;
+    }
+    
+    .foot-links h3{
+        font-size: 2.2rem;
+    }
+
+    .credits h1{
+        font-size: 2rem;
+    }
+
+    .foot{
+        width: 97%;
+    }
+    
+}
+
+
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+@media screen and (max-width: 600px){
+
+
+    .nav-box-1 p{
+        font-size: 1.1rem;
+    }
+    
+    .nav-box-1 h5{
+        font-size: 1.5rem;
+    }
+
+    .navbar{
+        padding: 0 1rem;
+    }
+
+    .nav-content {
+        gap: 1rem;
+    }
+
+    .logo{
+        width: 18%;
+    }
+
+    .nav-box-1 img {
+        padding: 0 0.8rem;
+        width: 25%;
+    }
+
+    .head-para h1{
+        font-size: 3.1rem;
+        font-weight: 700;
+    }
+
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 9%;
+        top: 13%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+  
+    .head-para h3{
+        font-size: 2.1rem;
+        font-weight: 700;
+    }
+
+    .footers{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .foot-about{
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer{
+        padding:0 ;
+    }
+     
+    .foot-about h3{
+        font-size: 2.8rem;
+    }
+    
+    .foot-about p{
+        font-size: 1.8rem;
+    }
+    
+    .social a{
+        font-size: 2.3rem;
+        padding: 1rem .5rem;
+    }
+
+    .contact-head{
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-box{
+        width: 35%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+    .credits h1{
+        font-size: 1.7rem;
+    }
+
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 9%;
+        top: 12%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-content {
+        gap: 0;
+    }
+
+    .contact-us{
+        width: 100%;
+       }
+    
+       .contact-head{
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:700px){
+
+    .contact-head{
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-box{
+        width: 35%;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .team-head h1{
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: #1F2B6C;
+    }
+    
+    .team-card{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        padding: 4rem 0;
+    }
+    
+    .team-box{
+        position: relative;
+        text-align: center;
+    }
+    
+    .teambox-name{
+        position: absolute;
+        background: #1F2B6C;
+        top: 26.4rem;
+        width: 100%;
+    }
+    
+    .teambox-name h3{
+        font-size: 2.4rem;
+        font-family: 600;
+        color: white;
+    }
+    
+    .teambox-name h6{
+        font-size: 1.6rem;
+        font-family: 400;
+        color: white;
+    }
+
+    .team-head h1{
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: #1F2B6C;
+    }
+    
+    .team-card{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+    
+    .team-box{
+        position: relative;
+        text-align: center;
+    }
+    
+    .teambox-name{
+        position: absolute;
+        background: #1F2B6C;
+        top: 26.4rem;
+        width: 100%;
+    }
+    
+    .teambox-name h3{
+        font-size: 2.4rem;
+        font-family: 600;
+        color: white;
+    }
+    
+    .teambox-name h6{
+        font-size: 1.6rem;
+        font-family: 400;
+        color: white;
+    }
+}
+
+@media (max-width:900px){
+
+    .team-head h1{
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: #1F2B6C;
+    }
+    
+    .team-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 4rem 0;
+    }
+    
+    .team-box{
+        position: relative;
+        text-align: center;
+    }
+    
+    .teambox-name{
+        position: absolute;
+        background: #1F2B6C;
+        top: 26.4rem;
+        width: 100%;
+    }
+    
+    .teambox-name h3{
+        font-size: 2.4rem;
+        font-family: 600;
+        color: white;
+    }
+    
+    .teambox-name h6{
+        font-size: 1.6rem;
+        font-family: 400;
+        color: white;
+    }
+}
+
+
+@media (max-width:1100px) {
+
+    .contact-box p{
+        font-size: 2.6rem;
+    }
+    
+    .contact-box h3{
+        font-size: 1.8rem;
+    }
+    
+    .contact-box h5{
+        font-size: 1.4rem;
+    }
+    
+    .contact-box h6{
+        font-size: 1.4rem;
+    }
+
+}
